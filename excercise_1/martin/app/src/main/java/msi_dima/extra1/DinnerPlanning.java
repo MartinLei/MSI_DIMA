@@ -57,14 +57,13 @@ public class DinnerPlanning {
 
         // - solution -
         Solver solver = model.getSolver();
-        while (solver.solve()) {
-            System.out.println("Who will visit the Martins tonight?:");
-            System.out.println(mr_dupont);
-            System.out.println(mrs_dupont);
-            System.out.println(emma);
-            System.out.println(ivana);
-            System.out.println(georg);
-        }
+        solver.solve();
+        System.out.println("Who will visit the Martins tonight?:");
+        System.out.println(mr_dupont);
+        System.out.println(mrs_dupont);
+        System.out.println(emma);
+        System.out.println(ivana);
+        System.out.println(georg);
 
     }
 }
