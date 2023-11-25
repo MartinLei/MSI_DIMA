@@ -10,7 +10,7 @@ def dictonary_attack():
     start_time = time.time()
     hash_to_crack = "e39156538e3e7193fdf6356469fa7414d078f97e"
 
-    with open(".\excercise_2\password_1_000_000.txt", "r") as file:
+    with open("password_1_000_000.txt", "r") as file:
         dictionary = file.readlines()
 
     password_found = False
