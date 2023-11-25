@@ -1,7 +1,7 @@
 import hashlib
 import time
 
-
+# tries every word in the file with len(word) <= 10, if smaller than 10, adds numbers from to the end until len(word) == 10. Hallo -> Hallo12345
 def decrypt(sha1_hash):
     with open(file_path, "r") as file:
         for word in file:
@@ -9,9 +9,9 @@ def decrypt(sha1_hash):
             if len(word) <= 10:
                 for i in range(10 - len(word)):
                     word += str(i+1)
-                    hashed_password = hashlib.sha1(word.encode()).hexdigest()
-                    if hashed_password == sha1_hash:
-                        return word
+                hashed_password = hashlib.sha1(word.encode()).hexdigest()
+                if hashed_password == sha1_hash:
+                    return word
 
 
 # Path to file
