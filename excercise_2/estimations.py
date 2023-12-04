@@ -55,7 +55,7 @@ print("System 3:", system_3_passwords,
 
 #Calculate the time with brute Force
 print("Estimated Time with brute force")
-# Assuming the system can check 100.000 combinations per second
+# Assuming the system can check 1_000_000 combinations per second
 combinations_per_second = 1_000_000
 # Calculate the time in seconds
 time_seconds_system1 = system_1_passwords / combinations_per_second
