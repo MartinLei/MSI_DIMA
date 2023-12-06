@@ -22,3 +22,9 @@ Time taken: 0.2289142608642578 seconds for 46.717 checks.
 ### 100.000 Checks from generated file which hope for Mrs. Stähles lazyness
 Password not found in dictionary
 Time taken: 0.13896846771240234 seconds for 100.000 checks.
+
+
+Solutions:
+system-1: MsI42
+system-2: winter1sc0
+system-3: 4ChatGPT
