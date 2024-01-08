@@ -10,15 +10,15 @@ def modular_expo(base, exponent, modulo):
         base = (base * base) % modulo
     return result
 
-def modular_expo_track_time(base, exponent, modolo):
+def modular_expo_track_time(base, exponent, modulo):
     start_time = time.time_ns()   
-    result = modular_expo(base, exponent, modolo)
+    result = modular_expo(base, exponent, modulo)
     end_time = time.time_ns()
     elapsed_time = (end_time - start_time) / 1_000_000 
-    print(f"  {base}^{exponent} mod {modolo} = {result}. Elapsed time {elapsed_time} ms")
+    print(f"  {base}^{exponent} mod {modulo} = {result}. Elapsed time {elapsed_time} ms")
 
 if __name__ == "__main__":
-    modular_expo_track_time(base=3, exponent=11, modolo=5)
-    modular_expo_track_time(base=5, exponent=99, modolo=11)
-    modular_expo_track_time(base=50, exponent=529, modolo=13)
-    modular_expo_track_time(base=50, exponent=999, modolo=17)
+    modular_expo_track_time(base=3, exponent=11, modulo=5)
+    modular_expo_track_time(base=5, exponent=99, modulo=11)
+    modular_expo_track_time(base=50, exponent=529, modulo=13)
+    modular_expo_track_time(base=50, exponent=999, modulo=17)
